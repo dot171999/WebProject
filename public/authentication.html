@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication</title>
+    <style>
+        img{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        div{
+            width: 15%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button{
+            width: 100%;
+            display: block;
+
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background: white;
+            color: black;
+        }
+        button:hover{
+            border: 1px solid red;
+            color: black;
+        }
+        button:focus{
+            border: 1px solid red;
+            color: black;
+            outline: 0;
+        }
+
+        h2{
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo/logo_18.png" height="108" width="94" >
+    <div id="authentication-div">
+        <button onclick="window.location='register.html'">Register</button>
+        <h2>Or</h2>
+    <button onclick="window.location='login.html'">Login</button>
+    </div>
+
+</body>
+</html>

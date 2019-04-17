@@ -1,0 +1,2 @@
+CALL firebase deploy
+pause
