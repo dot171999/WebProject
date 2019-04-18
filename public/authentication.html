@@ -3,54 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Authentication</title>
-    <style>
-        img{
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        div{
-            width: 15%;
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        button{
-            width: 100%;
-            display: block;
-
-            padding: 15px;
-            border: 1px solid black;
-            border-radius: 10px;
-            background: white;
-            color: black;
-        }
-        button:hover{
-            border: 1px solid red;
-            color: black;
-        }
-        button:focus{
-            border: 1px solid red;
-            color: black;
-            outline: 0;
-        }
-
-        h2{
-            text-align: center;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/authentication.css">
 </head>
 <body>
-    <img src="logo/logo_18.png" height="108" width="94" >
-    <div id="authentication-div">
-        <button onclick="window.location='register.html'">Register</button>
-        <h2>Or</h2>
-    <button onclick="window.location='login.html'">Login</button>
+    <div class="main-container" id="main-container">
+        <div class="icon-container">
+            <img src="logo/logo.jpg" alt="icon">
+        </div>
+
+        <div class="form-container">
+            <div class="register-container">
+                <div class="form">
+                    <h2>Create Account</h2>
+                    <input type="text" placeholder="Name">
+                    <input type="email" id="regEmail" placeholder="Email">
+                    <input type="password" id="regPass" placeholder="Password">
+                    <br>
+                    <div class="loader" id="loading"></div>
+                    <button onclick="register()" id="RegBtn">Register</button>
+                </div>
+            </div>
+            <div class="login-container">
+                <div class="form">
+                    <h2>Log In</h2>
+                    <input type="email" id="loginEmail" placeholder="Email">
+                    <input type="password" id="loginPass" placeholder="Password">
+                    <br>
+                    <div class="loader" id="loading1"></div>
+                    <button onclick="login()" id="LoginBtn">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay-register">
+                <h4>Already have a Account!</h4>
+                <button id="overlayLoginBtn">Login</button>
+            </div>
+            <div class="overlay-login">
+                <h4>Don't have a Account!</h4>
+                <button id="overlayRegBtn">Register</button>
+            </div>
+        </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/authentication.js"></script>
 </body>
 </html>
