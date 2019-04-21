@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Google Sans');
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Google Sans',arial,sans-serif;
+    margin: 0;
+    min-height: 600px;
+    min-width: 1200px;
+}
+
+.top{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 5px;
+    padding: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    top:0;
+    position: sticky;
+    z-index: 4;
+}
+
+.top a{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.left{
+    background: white;
+    width: 25%;
+    min-width: 300px;
+    position: fixed;
+    height: 100%;
+    top:50px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.left img{
+    width: 150px;
+}
+
+div.right{
+    background: white;
+    width: 25%;
+    min-width: 300px;
+    position: fixed;
+    right: 5px;
+    height: 100%;
+    top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+div.main{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    align-items: center;
+    width: 50%;
+    z-index:3;
+    position: relative;
+    max-width: 50%;
+    margin-left: 25%;
+    padding:5px 10px 10px;
+}
+
+div.bottom{
+    background: white;
+    margin: 5px 5px 0;
+    padding: 5px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+div.panel {
+    background: #039be5;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 10px;
+}
+
+
+div.main-panel {
+    background: lightgray;
+    width: 400px;
+    height: 150px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 10px;
+}
+
+div.status{
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid lightgray ;
+    border-bottom: white;
+    background-color: #fff;
+    position: fixed;
+    right: 50px;
+    z-index: 3;
+    bottom: 0;
+}

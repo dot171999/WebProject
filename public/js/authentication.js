@@ -7,3 +7,4 @@ regBtn.addEventListener('click',() =>
 
 logBtn.addEventListener('click',() =>
     container.classList.add('reg-active'));
+

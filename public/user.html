@@ -2,12 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User</title>
+    <link type="text/css" rel="stylesheet" href=css/user.css>
 </head>
 <body>
-    <div id="main-div" class="main-div">
-        <h1>$$$$$$$$$$$ HELLO USER $$$$$$$$$$$</h1>
-        <button onclick="logOut()">Logout</button>
+    <div class="top">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" onclick="logOut()">Logout</a>
+    </div>
+    <div class="left">
+        <img src="logo/user.png" alt="user pic">
+        <div class="panel">
+        </div>
+        <div class="panel">
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-panel">
+        </div>
+        <div class="main-panel">
+        </div>
+        <div class="main-panel">
+        </div>
+        <div class="main-panel">
+        </div>
+        <div class="main-panel">
+        </div>
+        <div class="main-panel">
+        </div>
+    </div>
+    <div class="right">
+        <h1>RIGHT</h1>
+        <div class="panel">
+        </div>
+        <div class="panel">
+        </div>
+    </div>
+    <div class="bottom">
+        <h1>BOTTOM</h1>
+    </div>
+    <div class="status">
+        <p>Online Friends</p>
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Google Sans');
 *{
     box-sizing: border-box;
 }
@@ -21,8 +21,8 @@
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    background: #f6f5f7;
+    font-family: 'Google Sans',arial,sans-serif;
+    background: white;
     width: 100%;
 }
 
@@ -38,48 +38,70 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    border-radius: 5px;
+    border: 1px solid lightgray;
     padding: 10px 0 0 0;
     overflow: hidden;
 }
 
-h2{
-    margin: 0 0 30px;
+h2,h1{
+    margin: 0 0 20px;
+}
+
+h4{
+    color: rgb(26, 115, 232);
 }
 
 button{
-    border: 1px solid white;
+    border: 1px solid black;
     outline: 0;
-    background:  #b98300;
+    background:  white;
     border-radius: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 10px 20px;
     transition: transform 80ms ease-in;
 }
 
+button:hover{
+    background: black;
+    color: whitesmoke;
+}
+
 button:active{
-    transform: scale(.95);
+    border: 1px solid darkgray;
+    background:  darkgray;
+    transform: scale(.99);
+    color: white;
 }
 
 .overlay-container button{
-    background:  #533800;
+    color: rgb(26, 115, 232);
+    background:  white;
     padding: 5px 15px;
+    border: 1px solid white;
+}
+
+.overlay-container button:hover{
+    background:  rgba(26, 115, 232, 0.05);
+}
+
+.overlay-container button:active{
+    background:  rgba(26, 115, 232, 0.2);
 }
 
 .form-container input{
-    background: #eee;
-    border: 2px solid white;
-    padding: 8px 15px;
+    background: white;
+    border: 1px solid lightgray;
+    padding: 12px 30px;
     margin: 8px 0;
-    border-radius: 20px;
-    outline: none;
+    border-radius: 3px;
 }
 
 .form-container input:focus{
-    border: 2px solid darkblue;
+    outline-color: black;
 }
+
 
 .icon-container{
     height: 20%;
@@ -88,7 +110,7 @@ button:active{
 
 img{
     display: block;
-    height: 60%;
+    height: 50%;
     margin: auto;
 }
 
@@ -114,9 +136,10 @@ img{
 .overlay-container{
     height: 20%;
     max-height: 20%;
-    background: #888888;
+    background: white;
     overflow: hidden;
     padding-bottom: 10px;
+    /*border-top: 1px solid lightgray;*/
 }
 
 .overlay-register, .overlay-login{

@@ -7,3 +7,5 @@ var config = {
     messagingSenderId: "655125244205"
 };
 firebase.initializeApp(config);
+
+var auth = firebase.auth();
